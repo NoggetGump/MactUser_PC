@@ -1,0 +1,14 @@
+{
+	"MACTQuery" :
+	{
+		"type" : "cmd",
+		"label" : "setRgbColor",
+		"device" : "BB-1EAA",
+		"cmds" : [
+		{
+			"seq" : 1,
+			"cmd" : "setRgb",
+			"args" : { "r" : 255, "g" : 0, "b" : 0, "setDefault" : 0  }
+		} ]
+	}
+}

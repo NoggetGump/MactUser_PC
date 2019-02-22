@@ -1,0 +1,34 @@
+{
+    "deviceType" : "robotCar",
+    "deviceModel" : "HC-08",
+    "deviceVendor" : "Elegoo",
+    "version" : 3.0,
+    "interface" : "ble",
+    "connection" :
+    [
+
+    ],
+     "commands" :
+         {
+            "ToogleLED" :
+            {
+                "alias" : "led",
+                "description" : "Turn LED on/off",
+                "service" : "0000FFE0-0000-1000-8000-00805F9B34FB",
+                "characteristic" : "0000FE1-0000-1000-8000-00805F9B34FB",
+                "arg_type" : [ ],
+                "args" : [ ],
+                "cmd" : [ "t" ]
+            },
+            "move" :
+            {
+                "alias" : "move", 
+                "description" : "Move to a direction at specific velocity", 
+                "service" : "0000FFE0-0000-1000-8000-00805F9B34FB",
+                "characteristic" : "0000FE1-0000-1000-8000-00805F9B34FB",
+                "arg_type" : [ "char", "int" ],
+                "args" : [ "direction", "speed" ],
+                "cmd" : [ "direction", "speed" ]
+            }
+         }
+}
