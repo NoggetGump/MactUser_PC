@@ -52,6 +52,6 @@ public class Actuator {
 
 	@Override
 	public String toString() {
-		return name;
+		return name + " (" + type + ")";
 	}
 }

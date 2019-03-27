@@ -23,7 +23,7 @@ public class RegisterOptionsPane {
 		myPanel.add(new JLabel("Name:"));
 		myPanel.add(NameField);
 		myPanel.add(Box.createVerticalStrut(15)); // a spacer
-		myPanel.add(new JLabel("Type:"));
+		myPanel.add(new JLabel("Device:"));
 		myPanel.add(MACField);
 		myPanel.add(Box.createVerticalStrut(15)); // a spacer
 		

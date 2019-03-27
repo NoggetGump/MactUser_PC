@@ -39,7 +39,8 @@ public class DesktopApi {
         // you can try something like
         // runCommand("gimp", "%s", file.getPath())
         // based on user preferences.
-
+    	System.out.println(file.getPath());
+    	
         if (openSystemSpecific(file.getPath())) return true;
 
         if (editDESKTOP(file)) return true;
@@ -201,7 +202,7 @@ public class DesktopApi {
         System.out.println(msg);
     }
 
-    public static enum EnumOS {
+    private static enum EnumOS {
         linux, macos, solaris, unknown, windows;
 
         public boolean isLinux() {
@@ -223,7 +224,7 @@ public class DesktopApi {
     }
 
 
-    public static EnumOS getOs() {
+    private static EnumOS getOs() {
 
         String s = System.getProperty("os.name").toLowerCase();
 

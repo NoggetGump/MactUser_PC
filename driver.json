@@ -10,7 +10,7 @@
     ],
      "commands" :
          {
-            "ToogleLED" :
+            "toogleLED" :
             {
                 "alias" : "led",
                 "description" : "Turn LED on/off",
@@ -23,12 +23,12 @@
             "move" :
             {
                 "alias" : "move", 
-                "description" : "Move to a direction at specific velocity", 
+                "description" : "Move to a direction at specific velocity (-179, 180 ; 0, 255)", 
                 "service" : "0000FFE0-0000-1000-8000-00805F9B34FB",
                 "characteristic" : "0000FE1-0000-1000-8000-00805F9B34FB",
                 "arg_type" : [ "char", "int" ],
-                "args" : [ "direction", "speed" ],
-                "cmd" : [ "direction", "speed" ]
+                "args" : [ "angle", "speed" ],
+                "cmd" : [ "angle", "speed" ]
             }
          }
 }
