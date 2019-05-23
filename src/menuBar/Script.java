@@ -9,7 +9,7 @@ public class Script {
 	
 	public Script(String name) throws IOException {
 		isEmpty = true;
-		script = new File(System.getProperty("user.dir") + name);
+		script = new File(System.getProperty("user.dir") + File.separator + "scripts" + File.separator + name);
 		
 		if (script.createNewFile())	{
 		    System.out.println("File is created!");
