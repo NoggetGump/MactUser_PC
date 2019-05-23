@@ -8,13 +8,13 @@ package main;
 
 import java.io.IOException;
 
-//import contextNET.ControllerClient;
+import contextNET.ControllerClient;
 import controlGUI.ControlPanel;
 
 public class Main {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) throws IOException{
-//		ControllerClient client = new ControllerClient();
-		ControlPanel cp = ControlPanel.getControlPanel(/*client*/);
+		ControllerClient client = new ControllerClient();
+		ControlPanel controlPanel = ControlPanel.getControlPanel(client);
 	}
 }

@@ -50,6 +50,7 @@ public class testServer implements UDIDataReaderListener<ApplicationObject> {
   public void onNewData(ApplicationObject topicSample) {
     Message message = (Message) topicSample;
     System.out.println(Serialization.fromJavaByteStream(message.getContent()));
+    System.out.println(message.getSenderId());
 /*
     PrivateMessage privateMessage = new PrivateMessage();
     privateMessage.setGatewayId(message.getGatewayId());

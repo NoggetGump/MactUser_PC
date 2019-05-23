@@ -2,6 +2,8 @@ package actuatorHandler;
 
 import org.json.JSONStringer;
 
+import controlGUI.ControlPanel;
+
 public class Actuator {
 	String name;
 	String type;
@@ -21,6 +23,7 @@ public class Actuator {
         	.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
         	.value("forward").endObject().endArray().endObject().endObject();
         System.out.println(js.toString());
+        ControlPanel.CP.ctxnetClient.sendCommand(js.toString());
 	}
 	
 	public void rightMove() {
@@ -30,6 +33,7 @@ public class Actuator {
         	.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
         	.value("right").endObject().endArray().endObject().endObject();
         System.out.println(js.toString());
+        ControlPanel.CP.ctxnetClient.sendCommand(js.toString());
 	}
 	
 	public void leftMove() {
@@ -39,6 +43,7 @@ public class Actuator {
         	.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
         	.value("left").endObject().endArray().endObject().endObject();
         System.out.println(js.toString());
+        ControlPanel.CP.ctxnetClient.sendCommand(js.toString());
 	}
 	
 	public void backwardMove() {
@@ -48,6 +53,18 @@ public class Actuator {
         	.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
         	.value("backward").endObject().endArray().endObject().endObject();
         System.out.println(js.toString());
+        ControlPanel.CP.ctxnetClient.sendCommand(js.toString());
+	}
+	
+	public void sendRGB(String R, String G, String B) {
+		JSONStringer js = new JSONStringer();
+		
+        js.object().key("MACTQuery").object().key("type").value("cmd").key("label").value("setRGBColor")
+    		.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
+    		.value("setRGB").key("args").object().key("R").value(R).key("G").value(G).key("B").value(B).key("setDefault")
+    		.value("0").endObject().endObject().endArray().endObject().endObject();
+        System.out.println(js.toString());
+        ControlPanel.CP.ctxnetClient.sendCommand(js.toString());
 	}
 
 	@Override

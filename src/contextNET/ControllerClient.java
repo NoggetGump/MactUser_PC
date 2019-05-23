@@ -6,6 +6,7 @@ import java.net.SocketAddress;
 import java.util.List;
 //import java.util.logging.Level;
 //import java.util.logging.Logger;
+import java.util.UUID;
 
 import lac.cnclib.net.NodeConnection;
 import lac.cnclib.net.NodeConnectionListener;
@@ -18,8 +19,10 @@ public class ControllerClient implements NodeConnectionListener {
   private static String			gatewayIP   = "127.0.0.1";
   private static int			gatewayPort = 5500;
   private MrUdpNodeConnection	connection;
+  private UUID                	myUUID;
 
   public ControllerClient() {
+	  myUUID = UUID.randomUUID();
       InetSocketAddress address = new InetSocketAddress(gatewayIP, gatewayPort);
       try {
           connection = new MrUdpNodeConnection();
@@ -65,6 +68,7 @@ public class ControllerClient implements NodeConnectionListener {
 	  ApplicationMessage message = new ApplicationMessage();
 	  
 	  message.setContentObject(command);
+	  message.setRecipientID(UUID.fromString("c443af46-ee9f-4735-b26e-cfe27beb47eb"));
 	  try {
 		connection.sendMessage(message);
 	  } catch (IOException e) {
