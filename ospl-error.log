@@ -1,0 +1,64 @@
+========================================================================================
+Report      : ERROR
+Date        : 2019-05-24T14:16:42-0300
+Description : ddsi_udp_conn_write failed with error code 22
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : tev 7f949afbc700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/ddsi2/ddsi_udp.c/147/0/1558718202.619722723/0
+========================================================================================
+Report      : ERROR
+Date        : 2019-05-24T14:16:42-0300
+Description : ddsi_udp_conn_write failed with error code 22
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : tev 7f949afbc700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/ddsi2/ddsi_udp.c/147/0/1558718202.755751157/0
+========================================================================================
+Report      : ERROR
+Date        : 2019-05-24T14:16:51-0300
+Description : ddsi_udp_conn_write failed with error code 22
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : tev 7f949afbc700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/ddsi2/ddsi_udp.c/147/0/1558718211.619665756/0
+========================================================================================
+Report      : ERROR
+Date        : 2019-05-24T14:16:51-0300
+Description : ddsi_udp_conn_write failed with error code 22
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : tev 7f949afbc700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/ddsi2/ddsi_udp.c/147/0/1558718211.755811749/0
+========================================================================================
+Report      : ERROR
+Date        : 2019-05-24T14:17:00-0300
+Description : ddsi_udp_conn_write failed with error code 22
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : tev 7f949afbc700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/ddsi2/ddsi_udp.c/147/0/1558718220.619739049/0
+========================================================================================
+Report      : ERROR
+Date        : 2019-05-24T14:17:00-0300
+Description : ddsi_udp_conn_write failed with error code 22
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : tev 7f949afbc700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/ddsi2/ddsi_udp.c/147/0/1558718220.755873995/0
+========================================================================================
+Report      : ERROR
+Date        : 2019-05-24T14:17:09-0300
+Description : ddsi_udp_conn_write failed with error code 22
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : tev 7f949afbc700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/ddsi2/ddsi_udp.c/147/0/1558718229.619922999/0
+========================================================================================
+Report      : ERROR
+Date        : 2019-05-24T14:17:09-0300
+Description : ddsi_udp_conn_write failed with error code 22
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : tev 7f949afbc700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/ddsi2/ddsi_udp.c/147/0/1558718229.755978537/0

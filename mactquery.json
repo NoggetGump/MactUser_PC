@@ -3,7 +3,7 @@
 	{
 		"type" : "cmd",
 		"label" : "setRgbColor",
-		"device" : "BB-1EAA",
+		"device" : "BB-556E",
 		"cmds" : [
 		{
 			"seq" : 1,

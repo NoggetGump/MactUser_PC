@@ -68,7 +68,7 @@ public class ControllerClient implements NodeConnectionListener {
 	  ApplicationMessage message = new ApplicationMessage();
 	  
 	  message.setContentObject(command);
-	  message.setRecipientID(UUID.fromString("c443af46-ee9f-4735-b26e-cfe27beb47eb"));
+	  message.setRecipientID(UUID.fromString("4c45d7c7-0055-432a-8efc-d59203336beb"));
 	  try {
 		connection.sendMessage(message);
 	  } catch (IOException e) {

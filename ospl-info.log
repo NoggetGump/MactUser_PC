@@ -266,3 +266,879 @@ Node        : rodolfo-X550CA
 Process     : java <9387>
 Thread      : conflictResolver 7f8741cb5700
 Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558570779.804105535/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T13:55:50-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1035782280 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : spliced 7f94a014d700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1558716950.547483596/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T13:55:50-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : spliced 7f94a014d700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1558716950.559375760/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T13:55:50-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : spliced 7f94a014d700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558716950.560261389/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T13:55:50-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : ddsi2 7f949b2ba700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558716950.667965024/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T13:55:50-0300
+Description : The durability service can be identified by ID: 1035782280
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : durability 7f949b65e700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1558716950.976491906/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T13:55:58-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <4089>
+Thread      : conflictResolver 7f949af23700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558716958.114090969/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:31:44-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 328963989 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <2071>
+Thread      : spliced 7f61c4075700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1558719104.439315839/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:31:44-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <2071>
+Thread      : spliced 7f61c4075700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1558719104.468001259/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:31:44-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <2071>
+Thread      : spliced 7f61c4075700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558719104.468584554/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:31:44-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <2071>
+Thread      : ddsi2 7f6163759700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558719104.575564363/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:31:44-0300
+Description : The durability service can be identified by ID: 328963989
+Node        : rodolfo-X550CA
+Process     : java <2071>
+Thread      : durability 7f6163afd700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1558719104.881706724/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:31:52-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <2071>
+Thread      : conflictResolver 7f61633f5700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558719112.020345910/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:45:30-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1567887590 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <4679>
+Thread      : spliced 7fc0f8160700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1558719930.483973323/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:45:30-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <4679>
+Thread      : spliced 7fc0f8160700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1558719930.484379354/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:45:30-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <4679>
+Thread      : spliced 7fc0f8160700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558719930.485219333/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:45:30-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <4679>
+Thread      : ddsi2 7fc0e8115700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558719930.498309809/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:45:30-0300
+Description : The durability service can be identified by ID: 1567887590
+Node        : rodolfo-X550CA
+Process     : java <4679>
+Thread      : durability 7fc0e8216700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1558719930.913399947/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:45:38-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <4679>
+Thread      : conflictResolver 7fc093ae8700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558719938.461004865/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:45:59-0300
+Description : Missed heartbeat for node 1567887590. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <2071>
+Thread      : OSPL Garbage Collector 7f61bc3ad700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1558719959.596304073/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:52:15-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1383823295 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <5726>
+Thread      : spliced 7f10a802e700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1558720335.711000921/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:52:15-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <5726>
+Thread      : spliced 7f10a802e700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1558720335.711438327/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:52:15-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <5726>
+Thread      : spliced 7f10a802e700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720335.712112468/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:52:15-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <5726>
+Thread      : ddsi2 7f1072f54700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720335.727392967/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:52:16-0300
+Description : The durability service can be identified by ID: 1383823295
+Node        : rodolfo-X550CA
+Process     : java <5726>
+Thread      : durability 7f10732f8700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1558720336.045058726/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:52:23-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <5726>
+Thread      : conflictResolver 7f1072bbd700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720343.688946750/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:52:54-0300
+Description : Missed heartbeat for node 1383823295. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <2071>
+Thread      : OSPL Garbage Collector 7f61bc3ad700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1558720374.902611004/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:08-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1751046786 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <6515>
+Thread      : spliced 7f8604017700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1558720748.107558979/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:08-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <6515>
+Thread      : spliced 7f8604017700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1558720748.107934334/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:08-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <6515>
+Thread      : spliced 7f8604017700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720748.108532088/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:08-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <6515>
+Thread      : ddsi2 7f85e88dd700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720748.124309219/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:08-0300
+Description : The durability service can be identified by ID: 1751046786
+Node        : rodolfo-X550CA
+Process     : java <6515>
+Thread      : durability 7f85e8c81700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1558720748.439889576/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:16-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <6515>
+Thread      : conflictResolver 7f85e8546700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720756.082497639/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:23-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1994769315 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <6603>
+Thread      : spliced 7fee9c1ad700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1558720763.730190966/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:23-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <6603>
+Thread      : spliced 7fee9c1ad700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1558720763.730609911/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:23-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <6603>
+Thread      : spliced 7fee9c1ad700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720763.731142444/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:23-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <6603>
+Thread      : ddsi2 7fee5733b700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720763.745597251/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:24-0300
+Description : The durability service can be identified by ID: 1994769315
+Node        : rodolfo-X550CA
+Process     : java <6603>
+Thread      : durability 7fee576df700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1558720764.063744820/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:31-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <6603>
+Thread      : conflictResolver 7fee5700a700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720771.707237595/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:39-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 560131964 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <6685>
+Thread      : spliced 7f8295603700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1558720779.752807675/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:39-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <6685>
+Thread      : spliced 7f8295603700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1558720779.753255271/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:39-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <6685>
+Thread      : spliced 7f8295603700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720779.753897111/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:39-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <6685>
+Thread      : ddsi2 7f8294778700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720779.771104116/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:40-0300
+Description : The durability service can be identified by ID: 560131964
+Node        : rodolfo-X550CA
+Process     : java <6685>
+Thread      : durability 7f8294b1c700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1558720780.086260661/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T14:59:47-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <6685>
+Thread      : conflictResolver 7f82943e1700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720787.731131513/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:00:07-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 122972736 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <6762>
+Thread      : spliced 7ff484014700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1558720807.280386596/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:00:07-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <6762>
+Thread      : spliced 7ff484014700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1558720807.280836343/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:00:07-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <6762>
+Thread      : spliced 7ff484014700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720807.281388924/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:00:07-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <6762>
+Thread      : ddsi2 7ff46385a700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720807.296110950/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:00:07-0300
+Description : The durability service can be identified by ID: 122972736
+Node        : rodolfo-X550CA
+Process     : java <6762>
+Thread      : durability 7ff46815f700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1558720807.614001634/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:00:15-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <6762>
+Thread      : conflictResolver 7ff463518700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558720815.260580154/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:00:32-0300
+Description : Missed heartbeat for node 122972736. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <6515>
+Thread      : OSPL Garbage Collector 7f85e9531700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1558720832.409463436/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:00:32-0300
+Description : Missed heartbeat for node 122972736. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <6603>
+Thread      : OSPL Garbage Collector 7fee57f7e700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1558720832.417137817/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:00:32-0300
+Description : Missed heartbeat for node 122972736. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <6685>
+Thread      : OSPL Garbage Collector 7f82953cc700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1558720832.417827624/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:00:32-0300
+Description : Missed heartbeat for node 122972736. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <2071>
+Thread      : OSPL Garbage Collector 7f61bc3ad700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1558720832.587088404/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:18:47-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1369021707 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <10193>
+Thread      : spliced 7f09d4041700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1558721927.297416990/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:18:47-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <10193>
+Thread      : spliced 7f09d4041700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1558721927.298284627/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:18:47-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <10193>
+Thread      : spliced 7f09d4041700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558721927.299123918/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:18:47-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <10193>
+Thread      : ddsi2 7f09cdb4f700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558721927.314990719/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:18:47-0300
+Description : The durability service can be identified by ID: 1369021707
+Node        : rodolfo-X550CA
+Process     : java <10193>
+Thread      : durability 7f09cdef3700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1558721927.629646845/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:18:55-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <10193>
+Thread      : conflictResolver 7f09cd7b8700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1558721935.280681650/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:20:15-0300
+Description : Missed heartbeat for node 1369021707. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <2071>
+Thread      : OSPL Garbage Collector 7f61bc3ad700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1558722015.625447797/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:20:15-0300
+Description : Missed heartbeat for node 1369021707. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <6603>
+Thread      : OSPL Garbage Collector 7fee57f7e700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1558722015.892331260/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:20:15-0300
+Description : Missed heartbeat for node 1369021707. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <6685>
+Thread      : OSPL Garbage Collector 7f82953cc700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1558722015.979866204/0
+========================================================================================
+Report      : INFO
+Date        : 2019-05-24T15:20:16-0300
+Description : Missed heartbeat for node 1369021707. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <6515>
+Thread      : OSPL Garbage Collector 7f85e9531700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1558722016.215310158/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:20:55-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1031369902 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <3713>
+Thread      : spliced 7fa534028700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1563394855.987438290/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:20:56-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <3713>
+Thread      : spliced 7fa534028700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1563394856.016854745/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:20:56-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <3713>
+Thread      : spliced 7fa534028700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1563394856.017686703/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:20:56-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <3713>
+Thread      : ddsi2 7fa512c88700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1563394856.124463464/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:20:56-0300
+Description : The durability service can be identified by ID: 1031369902
+Node        : rodolfo-X550CA
+Process     : java <3713>
+Thread      : durability 7fa51302c700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1563394856.345500914/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:21:03-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <3713>
+Thread      : conflictResolver 7fa512998700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1563394863.517438672/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:21:49-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1998490972 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <3793>
+Thread      : spliced 7f5a81401700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1563394909.956756279/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:21:49-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <3793>
+Thread      : spliced 7f5a81401700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1563394909.957354361/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:21:49-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <3793>
+Thread      : spliced 7f5a81401700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1563394909.970229643/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:21:49-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <3793>
+Thread      : ddsi2 7f5a80576700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1563394909.988949319/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:21:50-0300
+Description : The durability service can be identified by ID: 1998490972
+Node        : rodolfo-X550CA
+Process     : java <3793>
+Thread      : durability 7f5a8091a700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1563394910.612836388/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:21:58-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <3793>
+Thread      : conflictResolver 7f5a801df700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1563394918.309451149/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:28:49-0300
+Description : Missed heartbeat for node 1031369902. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <3793>
+Thread      : OSPL Garbage Collector 7f5a811ca700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1563395329.122196385/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:29:08-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 974703835 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <3996>
+Thread      : spliced 7f6c98061700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1563395348.393554459/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:29:08-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <3996>
+Thread      : spliced 7f6c98061700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1563395348.393953539/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:29:08-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <3996>
+Thread      : spliced 7f6c98061700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1563395348.394662518/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:29:08-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <3996>
+Thread      : ddsi2 7f6c9155a700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1563395348.410735808/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:29:08-0300
+Description : The durability service can be identified by ID: 974703835
+Node        : rodolfo-X550CA
+Process     : java <3996>
+Thread      : durability 7f6c918fe700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1563395348.723358633/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:29:16-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <3996>
+Thread      : conflictResolver 7f6c911d4700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1563395356.369059336/0
+========================================================================================
+Report      : INFO
+Date        : 2019-07-17T17:40:56-0300
+Description : Missed heartbeat for node 1998490972. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <3996>
+Thread      : OSPL Garbage Collector 7f6c9219d700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1563396056.257229292/0

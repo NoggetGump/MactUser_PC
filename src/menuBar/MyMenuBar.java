@@ -58,6 +58,7 @@ public class MyMenuBar extends JMenuBar {
 			JMenuItem script = new JMenuItem("Script " + i.toString(),
 					key);
 			scripts.add(new Script("/script_" + i.toString() + ".txt"));
+			script.addActionListener(new EditScriptListener());
 			run_script.add(script);
 		}
 		

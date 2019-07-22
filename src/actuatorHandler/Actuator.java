@@ -6,52 +6,25 @@ import controlGUI.ControlPanel;
 
 public class Actuator {
 	String name;
+	String device;
 	String type;
-	String cfg;
 	Integer seq;
 	
-	public Actuator(String name, String type) {
+	public Actuator(String name, String device, String type) {
 		this.name = name;
+		this.device = device;
 		this.type = type;
 		this.seq = 0;
 	}
 	
-	public void forwardMove() {
+	public void move(char heading) {
         JSONStringer js = new JSONStringer();
         
-        js.object().key("MACTQuery").object().key("type").value("cmd").key("label").value("moveForward")
-        	.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
-        	.value("forward").endObject().endArray().endObject().endObject();
-        System.out.println(js.toString());
-        ControlPanel.CP.ctxnetClient.sendCommand(js.toString());
-	}
-	
-	public void rightMove() {
-        JSONStringer js = new JSONStringer();
+        System.out.println("\n heading: " + heading + "\n");
         
-        js.object().key("MACTQuery").object().key("type").value("cmd").key("label").value("moveRight")
-        	.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
-        	.value("right").endObject().endArray().endObject().endObject();
-        System.out.println(js.toString());
-        ControlPanel.CP.ctxnetClient.sendCommand(js.toString());
-	}
-	
-	public void leftMove() {
-        JSONStringer js = new JSONStringer();
-        
-        js.object().key("MACTQuery").object().key("type").value("cmd").key("label").value("moveLeft")
-        	.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
-        	.value("left").endObject().endArray().endObject().endObject();
-        System.out.println(js.toString());
-        ControlPanel.CP.ctxnetClient.sendCommand(js.toString());
-	}
-	
-	public void backwardMove() {
-        JSONStringer js = new JSONStringer();
-        
-        js.object().key("MACTQuery").object().key("type").value("cmd").key("label").value("moveBackward")
-        	.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
-        	.value("backward").endObject().endArray().endObject().endObject();
+        js.object().key("MACTQuery").object().key("type").value("cmd").key("label").value("move")
+        	.key("device").value(device).key("cmds").array().object().key("seq").value(seq++).key("cmd")
+        	.value("move").key("args").object().key("heading").value(heading).endObject().endObject().endArray().endObject().endObject();
         System.out.println(js.toString());
         ControlPanel.CP.ctxnetClient.sendCommand(js.toString());
 	}
@@ -60,15 +33,21 @@ public class Actuator {
 		JSONStringer js = new JSONStringer();
 		
         js.object().key("MACTQuery").object().key("type").value("cmd").key("label").value("setRGBColor")
-    		.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
+    		.key("device").value(device).key("cmds").array().object().key("seq").value(seq++).key("cmd")
     		.value("setRGB").key("args").object().key("R").value(R).key("G").value(G).key("B").value(B).key("setDefault")
     		.value("0").endObject().endObject().endArray().endObject().endObject();
         System.out.println(js.toString());
         ControlPanel.CP.ctxnetClient.sendCommand(js.toString());
 	}
+	
+	public void sendGeneriComand(String jsonComand)
+	{
+		System.out.println(jsonComand);
+		ControlPanel.CP.ctxnetClient.sendCommand(jsonComand);
+	}
 
 	@Override
 	public String toString() {
-		return name + " (" + type + ")";
+		return name + " (" + device + ")";
 	}
 }

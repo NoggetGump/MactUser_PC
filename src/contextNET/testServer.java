@@ -3,7 +3,6 @@ package contextNET;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import lac.cnclib.sddl.message.ApplicationMessage;
 import lac.cnclib.sddl.serialization.Serialization;
 import lac.cnet.sddl.objects.ApplicationObject;
 import lac.cnet.sddl.objects.Message;

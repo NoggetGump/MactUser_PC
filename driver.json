@@ -23,12 +23,12 @@
             "move" :
             {
                 "alias" : "move", 
-                "description" : "Move to a direction at specific velocity (-179, 180 ; 0, 255)", 
+                "description" : "Move to a direction at specific velocity (forward, backward, right or left ; 0 to 255)", 
                 "service" : "0000FFE0-0000-1000-8000-00805F9B34FB",
                 "characteristic" : "0000FE1-0000-1000-8000-00805F9B34FB",
                 "arg_type" : [ "char", "int" ],
-                "args" : [ "angle", "speed" ],
-                "cmd" : [ "angle", "speed" ]
+                "args" : [ "direction", "speed" ],
+                "cmd" : [ "direction", "speed" ]
             }
          }
 }
