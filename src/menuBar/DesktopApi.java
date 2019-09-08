@@ -35,7 +35,6 @@ public class DesktopApi {
 
 
     public static boolean edit(File file) {
-
         // you can try something like
         // runCommand("gimp", "%s", file.getPath())
         // based on user preferences.

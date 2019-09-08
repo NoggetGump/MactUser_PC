@@ -1,57 +1,92 @@
 package actuatorHandler;
 
-import org.json.JSONStringer;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+import controlGUI.ControlPanel;
 
 public class Actuator {
-	String name;
-	String type;
-	String cfg;
-	Integer seq;
+	String informalName;
+	String deviceName;
+	String type = "cmd";
+	Integer seq = 0;
 	
-	public Actuator(String name, String type) {
-		this.name = name;
-		this.type = type;
-		this.seq = 0;
+	public Actuator(String deviceName) {
+		this.deviceName = deviceName;
 	}
 	
-	public void forwardMove() {
-        JSONStringer js = new JSONStringer();
-        
-        js.object().key("MACTQuery").object().key("type").value("cmd").key("label").value("moveForward")
-        	.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
-        	.value("forward").endObject().endArray().endObject().endObject();
-        System.out.println(js.toString());
+	public void addInformalName(String informalName) {
+		this.informalName = informalName;
 	}
 	
-	public void rightMove() {
-        JSONStringer js = new JSONStringer();
-        
-        js.object().key("MACTQuery").object().key("type").value("cmd").key("label").value("moveRight")
-        	.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
-        	.value("right").endObject().endArray().endObject().endObject();
-        System.out.println(js.toString());
+	@SuppressWarnings("unchecked")
+	public void move(char heading) {
+		JSONObject jsonObject = new JSONObject();
+		JSONObject query = new JSONObject();
+		JSONArray commands = new JSONArray();
+		JSONObject command = new JSONObject();
+		JSONObject args = new JSONObject();
+		
+		jsonObject.put("type", type);
+		jsonObject.put("label", "move");
+		jsonObject.put("device", deviceName);
+		
+		command.put("seq", seq++);
+		command.put("cmd", "move");
+		
+		args.put("heading", heading);
+		
+		command.put("args", args.toJSONString());
+		
+		commands.add(command);
+		
+		jsonObject.put("cmds", commands);
+		
+		query.put("MACTQuery", jsonObject);
+		
+        ControlPanel.getContextnetClient().sendCommand(query.toJSONString(),
+				(String) ControlPanel.getControlPanel().getSelectedMhub());
 	}
 	
-	public void leftMove() {
-        JSONStringer js = new JSONStringer();
-        
-        js.object().key("MACTQuery").object().key("type").value("cmd").key("label").value("moveLeft")
-        	.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
-        	.value("left").endObject().endArray().endObject().endObject();
-        System.out.println(js.toString());
+	@SuppressWarnings("unchecked")
+	public void sendRGB(String R, String G, String B){
+		JSONObject jsonObject = new JSONObject();
+		JSONObject query = new JSONObject();
+		JSONArray commands = new JSONArray();
+		JSONObject command = new JSONObject();
+		JSONObject args = new JSONObject();
+		
+		jsonObject.put("type", type);
+		jsonObject.put("label", "move");
+		jsonObject.put("device", deviceName);
+		
+		command.put("seq", seq++);
+		command.put("cmd", "move");
+		
+		args.put("R", R);
+		args.put("G", G);
+		args.put("B", B);
+		
+		command.put("args", args.toJSONString());
+		
+		commands.add(command);
+		
+		jsonObject.put("cmds", commands);
+		
+		query.put("MACTQuery", jsonObject);
+		
+        ControlPanel.getContextnetClient().sendCommand(query.toJSONString(),
+				(String) ControlPanel.getControlPanel().getSelectedMhub());
 	}
 	
-	public void backwardMove() {
-        JSONStringer js = new JSONStringer();
-        
-        js.object().key("MACTQuery").object().key("type").value("cmd").key("label").value("moveBackward")
-        	.key("device").value(name).key("cmds").array().object().key("seq").value(++seq).key("cmd")
-        	.value("backward").endObject().endArray().endObject().endObject();
-        System.out.println(js.toString());
+	public void sendCustoMactQuery(String query) {
+		System.out.println(query);
+		ControlPanel.getContextnetClient().sendCommand(query, 
+				(String) ControlPanel.getControlPanel().getSelectedMhub());
 	}
 
 	@Override
 	public String toString() {
-		return name + " (" + type + ")";
+		return deviceName;
 	}
 }
