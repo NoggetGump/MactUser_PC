@@ -44,7 +44,9 @@ public class Actuator {
 		
 		query.put("MACTQuery", jsonObject);
 		
-        ControlPanel.getContextnetClient().sendCommand(query.toJSONString(),
+		String message = "[" + query.toJSONString() + "]";
+		
+        ControlPanel.getContextnetClient().sendCommand(message,
 				(String) ControlPanel.getControlPanel().getSelectedMhub());
 	}
 	
@@ -61,7 +63,7 @@ public class Actuator {
 		jsonObject.put("device", deviceName);
 		
 		command.put("seq", seq++);
-		command.put("cmd", "move");
+		command.put("cmd", "setRgb");
 		
 		args.put("R", R);
 		args.put("G", G);
@@ -75,7 +77,9 @@ public class Actuator {
 		
 		query.put("MACTQuery", jsonObject);
 		
-        ControlPanel.getContextnetClient().sendCommand(query.toJSONString(),
+		String message = "[" + query.toJSONString() + "]";
+		
+        ControlPanel.getContextnetClient().sendCommand(message,
 				(String) ControlPanel.getControlPanel().getSelectedMhub());
 	}
 	

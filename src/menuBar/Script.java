@@ -89,7 +89,7 @@ public class Script {
 	        		case Consts.ERROR:
 	        			//TODO popup message ERROR - Script mistake at line @line
 	        			System.out.println("Mistake at line: " + line);
-	        			break;
+	        			break; 
 	        			
 	        		default:
 	        			word.append((char)character);
@@ -140,42 +140,40 @@ public class Script {
 	}
 	
 	private String generateMactQuery (String deviceName, String deviceLabel) { 
-		String mactQuery = new String();
+		StringBuilder mactQuery = new StringBuilder(new String());
 		
-		//TODO USE STRING BUFFER TO DO THIS - IS MORE EFFICIENT -
-		// - nog
-		mactQuery = "[ {\n"//open Json curly brackets
+		mactQuery.append("[ {\n"//open Json curly brackets
 				+ "\t\"MACTQuery\" :\n"
 				+ "\t{\n" //open MACTQuery curly brackets
 				+ "\t\t\"type\" : \"cmd\",\n"
 				+ "\t\t\"label\" : \"someLabel\",\n"
 				+ "\t\t\"device\" : \"" + deviceName + "\"" + ",\n"
 				+ "\t\t\"id\" : " + ControlPanel.getContextnetClient().myUUID + ",\n"
-				+ "\t\t\"cmds\" : [\n"; //open brackets to cmds
+				+ "\t\t\"cmds\" : [\n"); //open brackets to cmds
 		while(!cmds.isEmpty()) {
 			CmdPair cmd = cmds.remove(FIRST);
 			
-			mactQuery = mactQuery + "\t\t{\n" //opens curly brackets to command
+			mactQuery.append("\t\t{\n" //opens curly brackets to command
 					+ "\t\t\t\"cmd\" : \"" + cmd.cmd + "\",\n"
-					+ "\t\t\t\"args\" : { "; //open curly brackets to args
+					+ "\t\t\t\"args\" : { "); //open curly brackets to args
 			while(cmd.nArgs != 0) {
 				cmd.nArgs--;
-				mactQuery = mactQuery + "\"" + args.remove(FIRST) + "\" : "
-						+ values.remove(FIRST);
+				mactQuery.append("\"" + args.remove(FIRST) + "\" : "
+						+ values.remove(FIRST));
 				if(cmd.nArgs != 0)
-					mactQuery = mactQuery + ", ";
+					mactQuery.append(", ");
 			}
-			mactQuery = mactQuery + " }\n" //close curly brackets to args
-					+ "\t\t}"; //close curly brackets to command
+			mactQuery.append(" }\n" //close curly brackets to args
+					+ "\t\t}"); //close curly brackets to command
 			if(!cmds.isEmpty())
-				mactQuery = mactQuery + ", ";
+				mactQuery.append(", ");
 		}
 		
-		mactQuery = mactQuery + "]\n" //close brackets to cmds
+		mactQuery.append("]\n" //close brackets to cmds
 				+ "\t}\n" //close MACTQuery curly brackets
-				+ "} ]"; //close Json curly brackets
+				+ "} ]"); //close Json curly brackets
 		
-		return mactQuery;
+		return mactQuery.toString();
 	}
 
 	public boolean isEmpty() {

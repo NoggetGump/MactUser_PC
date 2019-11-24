@@ -1,11 +1,11 @@
 package contextNET;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.util.List;
 import java.util.UUID;
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 //import org.json.JSONObject;
@@ -30,12 +30,27 @@ public class ControllerClient implements NodeConnectionListener {
   private static int			gatewayPort = 5500;
   private MrUdpNodeConnection	connection;
   public UUID                	myUUID;
-  
-  private long startTime;
+
+  private File file;
+  private String dirPath = System.getProperty("user.dir") + File.separator + "Test_Run";
+  private String filePath = dirPath + File.separator + "test_1.txt";
+
 
   public ControllerClient() {
 	  //myUUID = UUID.randomUUID();
-	 
+
+	File dir = new File(dirPath);
+	if(!dir.exists())
+		dir.mkdir();
+	file = new File(filePath);
+	
+	try {
+		file.createNewFile();
+	} catch (IOException e1) {
+		// TODO Auto-generated catch block
+		e1.printStackTrace();
+	}
+
       InetSocketAddress address = new InetSocketAddress(gatewayIP, gatewayPort);
       try {
           connection = new MrUdpNodeConnection();
@@ -78,17 +93,7 @@ public class ControllerClient implements NodeConnectionListener {
 		}
 	}
   
-	private void handleSOMMessage(JSONObject jsonObject) {
-		if (jsonObject.get("TIME_TEST") != null) 
-		{
-			long endTime = System.nanoTime();
-			long deltaTime = endTime - startTime;
-			
-			System.out.println("Tempo >> " + deltaTime);
-			return;
-		}
-		
-		
+	private void handleSOMMessage(JSONObject jsonObject) {		
 		String command = (String) jsonObject.get(atr_cmd);
 
 		System.out.println("Recebeu o comando: " + command);
@@ -133,7 +138,7 @@ public class ControllerClient implements NodeConnectionListener {
 			} catch (ParseException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}		
+			}
 			
 			String hub = (String) mobileAct.get("hub");
 			String name = (String) mobileAct.get("name");
@@ -230,7 +235,6 @@ public class ControllerClient implements NodeConnectionListener {
 	  message.setRecipientID(UUID.fromString(mHubUUID));
 	  try {
 		System.out.println("COMMAND \"" + actuationCommand + "\" SENT");
-		startTime = System.nanoTime();
 		connection.sendMessage(message);
 	  } catch (IOException e) {
 		e.printStackTrace();
