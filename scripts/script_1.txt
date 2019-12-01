@@ -1,1 +1,1 @@
-cmd move args heading r speed 210;!
+cmd constroiComando args power on;!

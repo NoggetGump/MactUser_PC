@@ -4056,3 +4056,375 @@ Node        : rodolfo-X550CA
 Process     : java <7548>
 Thread      : OSPL Garbage Collector 7f704101f700
 Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1568100056.361262270/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-25T18:54:37-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 179372192 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : spliced 7f8be4024700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1574718877.283497921/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-25T18:54:37-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : spliced 7f8be4024700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1574718877.294820551/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-25T18:54:37-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : spliced 7f8be4024700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1574718877.296905125/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-25T18:54:37-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : ddsi2 7f8bc8bd1700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1574718877.405873428/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-25T18:54:37-0300
+Description : The durability service can be identified by ID: 179372192
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : durability 7f8bc8f75700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1574718877.816369933/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-25T18:54:45-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : conflictResolver 7f8bc888f700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1574718885.041837019/0
+========================================================================================
+Report      : WARNING
+Date        : 2019-11-25T21:42:23-0300
+Description : thread gc failed to make progress
+
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : lease 7f8bc8ad0700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/ddsi2/q_servicelease.c/131/0/1574728943.100521229/0
+========================================================================================
+Report      : WARNING
+Date        : 2019-11-25T21:42:26-0300
+Description : thread gc once again made progress
+
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : lease 7f8bc8ad0700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/ddsi2/q_servicelease.c/131/0/1574728946.159243662/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-25T21:42:26-0300
+Description : Missed heartbeat for node 536272558. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574728946.812403628/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-25T23:05:35-0300
+Description : Missed heartbeat for node 702095333. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574733935.557521993/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-25T23:26:34-0300
+Description : Missed heartbeat for node 1003690497. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574735194.057291379/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T00:07:25-0300
+Description : Missed heartbeat for node 1696038245. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574737645.311044950/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T00:33:17-0300
+Description : Missed heartbeat for node 2125794140. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574739197.391788666/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T00:47:28-0300
+Description : Missed heartbeat for node 15077057. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574740048.696626646/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T01:04:37-0300
+Description : Missed heartbeat for node 1308765859. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574741077.435683406/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T01:12:40-0300
+Description : Missed heartbeat for node 1242159667. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574741560.436583801/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T01:30:38-0300
+Description : Missed heartbeat for node 683932867. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574742638.451535545/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T01:34:01-0300
+Description : Missed heartbeat for node 981807021. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574742841.366583941/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T01:35:54-0300
+Description : Missed heartbeat for node 422077961. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574742954.609812916/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T01:39:00-0300
+Description : Missed heartbeat for node 947306363. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574743140.668340144/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T03:27:26-0300
+Description : Missed heartbeat for node 2082554169. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574749646.560552516/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T03:30:42-0300
+Description : Missed heartbeat for node 659392188. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574749842.456468996/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T03:32:32-0300
+Description : Missed heartbeat for node 17910462. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574749952.299539141/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T03:36:32-0300
+Description : Missed heartbeat for node 917842349. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574750192.431059136/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T03:37:54-0300
+Description : Missed heartbeat for node 138905824. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574750274.451702668/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T03:44:43-0300
+Description : Missed heartbeat for node 2122535314. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574750683.805712796/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T03:46:45-0300
+Description : Missed heartbeat for node 100004713. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574750805.407630811/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T15:27:46-0300
+Description : Missed heartbeat for node 1005929330. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <12373>
+Thread      : OSPL Garbage Collector 7f8bc9814700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574792866.362592992/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T18:55:51-0300
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1829870954 from [1,2147483647]
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : spliced 7fbf5c060700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/The OpenSplice domain service/u_domain.c/785/0/1574805351.238689531/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T18:55:51-0300
+Description : Service cmsoap disabled
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : spliced 7fbf5c060700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/OpenSplice domain service/sr_componentInfo.c/446/0/1574805351.250478869/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T18:55:51-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : spliced 7fbf5c060700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1574805351.251086052/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T18:55:51-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : ddsi2 7fbf5584c700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1574805351.317659574/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T18:55:51-0300
+Description : The durability service can be identified by ID: 1829870954
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : durability 7fbf55c01700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/DurabilityService/d_durability.c/554/0/1574805351.631674108/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T18:55:58-0300
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : conflictResolver 7fbf554d7700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_serviceChangeState/v_service.c/266/0/1574805358.796865245/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T18:57:55-0300
+Description : Missed heartbeat for node 95031635. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : OSPL Garbage Collector 7fbf564a0700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574805475.382610048/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T18:59:57-0300
+Description : Missed heartbeat for node 1602631925. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : OSPL Garbage Collector 7fbf564a0700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574805597.934449101/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T19:04:49-0300
+Description : Missed heartbeat for node 1949528675. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : OSPL Garbage Collector 7fbf564a0700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574805889.602582433/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T19:07:18-0300
+Description : Missed heartbeat for node 1946742434. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : OSPL Garbage Collector 7fbf564a0700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574806038.589127063/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T19:11:32-0300
+Description : Missed heartbeat for node 471967245. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : OSPL Garbage Collector 7fbf564a0700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574806292.021074476/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T19:14:04-0300
+Description : Missed heartbeat for node 1675314475. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : OSPL Garbage Collector 7fbf564a0700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574806444.333700117/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T21:03:46-0300
+Description : Missed heartbeat for node 1264000955. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : OSPL Garbage Collector 7fbf564a0700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574813026.465778725/0
+========================================================================================
+Report      : INFO
+Date        : 2019-11-26T21:52:13-0300
+Description : Missed heartbeat for node 255973040. (DCPSPublication is complete)
+Node        : rodolfo-X550CA
+Process     : java <15309>
+Thread      : OSPL Garbage Collector 7fbf564a0700
+Internals   : 6.9.181018OSS/4cfd22d9/4cfd22d9/v_spliced/v_spliced.c/2062/769/1574815933.862425662/0

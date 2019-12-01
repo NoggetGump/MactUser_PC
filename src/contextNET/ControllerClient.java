@@ -1,11 +1,15 @@
 package contextNET;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.util.List;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 //import org.json.JSONObject;
@@ -23,19 +27,27 @@ import lac.cnclib.net.mrudp.MrUdpNodeConnection;
 import lac.cnclib.sddl.message.ApplicationMessage;
 import lac.cnclib.sddl.message.Message;
 import lac.cnclib.sddl.message.ClientLibProtocol.PayloadSerialization;
+import menuBar.MyMenuBar;
 
 public class ControllerClient implements NodeConnectionListener {
+	
+  public static final String cmd_time_test = "time_test";
 
   private static String			gatewayIP   = "127.0.0.1";
   private static int			gatewayPort = 5500;
   private MrUdpNodeConnection	connection;
-  public UUID                	myUUID;
+  public UUID                	myUUID = UUID.fromString("eb9a5a6f-4d0b-4e96-bdea-7dff918c4024");
 
   private File file;
   private String dirPath = System.getProperty("user.dir") + File.separator + "Test_Run";
   private String filePath = dirPath + File.separator + "test_1.txt";
-
-
+  
+  private long startTime;
+  int count = 0;
+  int maxCount = 1000;
+  int testScriptIndex = 1;
+  boolean testFlag = false;
+  
   public ControllerClient() {
 	  //myUUID = UUID.randomUUID();
 
@@ -56,11 +68,10 @@ public class ControllerClient implements NodeConnectionListener {
           connection = new MrUdpNodeConnection();
           connection.addNodeConnectionListener(this);
           connection.connect(address);
+          connection.setUuid(myUUID);
       } catch (IOException e) {
           e.printStackTrace();
       }
-      
-      myUUID = connection.getUuid();
       
       refreshDevicesList();
   }
@@ -74,7 +85,7 @@ public class ControllerClient implements NodeConnectionListener {
 	  
 	String content = (String) new String(message.getContent());
 	
-	System.out.println("new message received, content = " + content);
+//	System.out.println("new message received, content = " + content);
 	
 	JSONParser parser = new JSONParser();
 	
@@ -93,15 +104,20 @@ public class ControllerClient implements NodeConnectionListener {
 		}
 	}
   
-	private void handleSOMMessage(JSONObject jsonObject) {		
+	private void handleSOMMessage(JSONObject jsonObject) {
+		
 		String command = (String) jsonObject.get(atr_cmd);
 
-		System.out.println("Recebeu o comando: " + command);
+//		System.out.println("Recebeu o comando: " + command);
 
 		switch (command) {
 		
 		case cmd_get_connected_devices:
 			handleGetDevicesListCommand(jsonObject);
+			break;
+			
+		case cmd_time_test:
+			timeTest();
 			break;
 			
 		default:
@@ -138,7 +154,7 @@ public class ControllerClient implements NodeConnectionListener {
 			} catch (ParseException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
+			}		
 			
 			String hub = (String) mobileAct.get("hub");
 			String name = (String) mobileAct.get("name");
@@ -148,6 +164,43 @@ public class ControllerClient implements NodeConnectionListener {
 			ControlPanel.getControlPanel().add2Lists(act, hub);
 		}
 }
+  
+	private void timeTest() {
+		long endTime = System.nanoTime();
+		long deltaTime = endTime - startTime;
+		
+		System.out.println("Tempo >> " + deltaTime);
+		
+         try {
+             BufferedWriter bw = new BufferedWriter(new FileWriter(filePath, true));    
+             bw.write(String.valueOf(deltaTime) + "\n");
+             bw.close();
+         } catch(Exception e){
+            	System.out.println(e);
+           }
+         
+         if(testFlag && (count < maxCount)) {
+             try {
+     			TimeUnit.SECONDS.sleep(2);
+     		 } catch (InterruptedException e) {
+     			// TODO Auto-generated catch block
+     			e.printStackTrace();
+     		   }
+ //       	 System.out.println("Reenvio de mensagem para testes");
+        	 startTime = System.nanoTime();
+        	 try {
+	     			MyMenuBar.scripts.get(testScriptIndex - 1).runScript();
+	     		} catch (NumberFormatException e1) {
+	     			// TODO Auto-generated catch block
+	     			e1.printStackTrace();
+	     		} catch (IOException e1) {
+	     			// TODO Auto-generated catch block
+	     			e1.printStackTrace();
+	     		}
+         }
+
+		return;
+	}
 
 /**
    * Refreshes Devices List - via requesting the info
@@ -234,7 +287,9 @@ public class ControllerClient implements NodeConnectionListener {
 	  message.setContentObject(actuationCommand);
 	  message.setRecipientID(UUID.fromString(mHubUUID));
 	  try {
-		System.out.println("COMMAND \"" + actuationCommand + "\" SENT");
+//		System.out.println("COMMAND \"" + actuationCommand + "\" SENT");
+		if(testFlag)
+			startTime = System.nanoTime();
 		connection.sendMessage(message);
 	  } catch (IOException e) {
 		e.printStackTrace();
@@ -249,7 +304,7 @@ public class ControllerClient implements NodeConnectionListener {
   public void sendMessage(Message SOMCommandMessage) {
 	  SOMCommandMessage.setSenderID(myUUID);
 	  try {
-		System.out.println("COMMAND \"" + SOMCommandMessage.getContentObject().toString() + "\" SENT");
+//		System.out.println("COMMAND \"" + SOMCommandMessage.getContentObject().toString() + "\" SENT");
 		connection.sendMessage(SOMCommandMessage);
 	  } catch (IOException e) {
 		e.printStackTrace();

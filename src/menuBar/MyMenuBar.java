@@ -20,7 +20,7 @@ public class MyMenuBar extends JMenuBar {
 	private JMenuItem register_driver;
 	private JMenuItem add_actuator;
 	private JMenuItem config_actuator;
-	static ArrayList<Script> scripts;
+	public static ArrayList<Script> scripts;
 	
 	public MyMenuBar() {
 		

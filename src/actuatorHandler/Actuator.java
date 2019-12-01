@@ -84,7 +84,7 @@ public class Actuator {
 	}
 	
 	public void sendCustoMactQuery(String query) {
-		System.out.println(query);
+		//System.out.println(query);
 		ControlPanel.getContextnetClient().sendCommand(query, 
 				(String) ControlPanel.getControlPanel().getSelectedMhub());
 	}
